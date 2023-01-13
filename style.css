@@ -1,0 +1,66 @@
+html{
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("nxs.jpg");
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.toggle{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle__input{
+    display: none;
+}
+.toggle__bar{
+    position: relative;
+    width: 10rem;
+    height: 4rem;
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5rem;
+    background-image: url(./mattrai.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+    border-radius: 5rem;
+    transition: all .25s linear;
+}
+
+.toggle__spin{
+    height: 3rem;
+    width: 3rem;
+    background-image: url(./mattrai.png);
+    border-radius: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    border-radius: 5rem;
+    transition: all .25s linear;
+    box-shadow: 0 0 5px 1px red;
+    border: 1px solid #ccc;
+}
+
+.toggle__input:checked + .toggle__bar{
+    background-image: url(./matphai.png);
+}
+
+.toggle__input:checked + .toggle__bar .toggle__spin{
+    background-image: url(./matphai.png);
+    transform: translateX(6rem);
+    box-shadow: 0 0 5px 1px #ccc;
+}
+
+
